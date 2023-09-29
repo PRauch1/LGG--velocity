@@ -1,0 +1,13 @@
+CompleteModelRadSelected <- lmer(mtd ~ growthYears + gyrus + surgerytype + histology + p19q + 
+                                   idh + post_surg1 + post_surg2 + post_surg3 + (growthYears | 
+                                                                                   patient_number) + original_gldm_graylevelnonuniformity_T2 + 
+                                   original_shape_surfacevolumeratio_T1c + original_firstorder_energy_T2 + 
+                                   original_ngtdm_coarseness_T1c + original_firstorder_skewness_T2 + 
+                                   original_ngtdm_strength_T1c + original_ngtdm_strength_T2 + 
+                                   growthYears:gyrus + growthYears:surgerytype + growthYears:histology + 
+                                   growthYears:post_surg1 + growthYears:post_surg2 + growthYears:post_surg3 + 
+                                   original_gldm_graylevelnonuniformity_T2:yearsMR1 + original_shape_surfacevolumeratio_T1c:yearsMR1 + 
+                                   original_firstorder_energy_T2:yearsMR1 + original_ngtdm_coarseness_T1c:yearsMR1 + 
+                                   original_firstorder_skewness_T2:yearsMR1 + original_ngtdm_strength_T1c:yearsMR1 + 
+                                   original_ngtdm_strength_T2:yearsMR1 + growthYears:post_surg1:resection1 + 
+                                   growthYears:post_surg2:resection2 + growthYears:post_surg3:resection3, data = d2sel)
